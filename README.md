@@ -6,18 +6,10 @@
 
 Aplikasi desktop GUI berbasis **JavaFX** dan **Maven** untuk mengelola pencatatan stok produk toko secara interaktif. Aplikasi ini dibangun dengan menerapkan arsitektur *Model-View-Controller* (MVC), prinsip Pemrograman Berorientasi Objek (OOP), serta antarmuka *Full-Color* bergradasi yang modern.
 
----
+<img width="1117" height="898" alt="image" src="https://github.com/user-attachments/assets/75030e52-8686-4fe9-90fd-82830901df5b" />
+<img width="1117" height="887" alt="image" src="https://github.com/user-attachments/assets/9d2e8a41-37d7-4192-a860-0fa2004646e5" />
+<img width="1115" height="885" alt="image" src="https://github.com/user-attachments/assets/0bd6a874-75e6-4fd6-b75c-4247bc9adf60" />
 
-## 📱 Tampilan Antarmuka (UI)
-
-<p align="center">
-  <b>1. Halaman Form Input Produk</b><br>
-  <img src="docs/form.png" width="85%" alt="Halaman Form Input Produk"><br><br>
-  <b>2. Halaman Detail Struk Produk</b><br>
-  <img src="docs/detail.png" width="85%" alt="Halaman Detail Produk"><br><br>
-  <b>3. Halaman Tabel Stok & Live Search</b><br>
-  <img src="docs/daftar.png" width="85%" alt="Halaman Tabel Stok Produk">
-</p>
 
 ---
 
