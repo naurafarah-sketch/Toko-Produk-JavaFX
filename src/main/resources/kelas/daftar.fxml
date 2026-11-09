@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="kelas.controller.DaftarController"
+            stylesheets="@styles/app.css">
+    <top>
+        <VBox spacing="14" styleClass="header">
+            <HBox alignment="CENTER_LEFT" spacing="16">
+                <Label text="Daftar Stok Produk Toko" styleClass="title"/>
+                <Region HBox.hgrow="ALWAYS" />
+                <Button text="+ Tambah Produk Baru" onAction="#tambah" styleClass="button-primary"/>
+            </HBox>
+            
+            <!-- Area Pencarian Live, Filter Dropdown & Action Buttons -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <TextField fx:id="cariField" promptText="🔍 Ketik nama atau kode produk..." prefWidth="260"/>
+                <ComboBox fx:id="filterKategoriBox" prefWidth="160"/>
+                <Button text="Reset" onAction="#resetPencarian" styleClass="button-warning"/>
+                <Region HBox.hgrow="ALWAYS" />
+                <Button text="Lihat Detail" onAction="#detail" styleClass="button-info"/>
+                <Button text="Hapus" onAction="#hapus" styleClass="button-danger"/>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="12" styleClass="page">
+            <!-- Kartu Ringkasan Statistik Inventaris -->
+            <HBox styleClass="stat-card" alignment="CENTER_LEFT">
+                <Label fx:id="statLabel" styleClass="stat-text" text="📊 Total Produk: 0 | Nilai Inventaris: Rp0"/>
+            </HBox>
+
+            <TableView fx:id="tabel" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="kodeCol" text="Kode" prefWidth="110"/>
+                    <TableColumn fx:id="namaCol" text="Nama Produk" prefWidth="260"/>
+                    <TableColumn fx:id="kategoriCol" text="Kategori" prefWidth="140"/>
+                    <TableColumn fx:id="hargaCol" text="Harga (Rp)" prefWidth="160"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox style="-fx-padding: 8 28;">
+            <Label fx:id="pesanLabel" wrapText="true" styleClass="muted"/>
+        </HBox>
+    </bottom>
+</BorderPane>
